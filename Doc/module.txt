@@ -1,0 +1,11 @@
+1. 模块module：
+   每一个node.js文件都可以作为一个module模块
+   导出模块  ->  exports.myfunctionPr = myfaction;  此为导出一个方法
+             ->  module.exports = myfunction  // 导出整个Js为一个模块
+   引用：在其他js模块中 require(./moduleName); //同一个文件夹下引用
+
+2. NodeJs包：
+   node包nodeJs对多个模块功能进行封装的结果，包含 package.json 等文件
+   package 中包含作者、依赖关系等等
+   npm init 可以生成并手动编写package内容
+

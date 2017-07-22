@@ -1,0 +1,15 @@
+Event:
+1. NodeJs的event是交互的关键，
+  server.on('event', function(arg){
+      console.log('这是一个event');     
+  }
+
+
+2. 添加监听器：
+  server.on('request', faction(req, res){
+      res.writeHead(200,{'Content-Type':'text/plain'}); // 写入http响应头
+      res.write('这是一个事件');   // 写入事件调用时的响应
+      console.log('本地输出');
+      res.end(); // 结束响应  返回响应内容
+  }
+
